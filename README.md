@@ -2,7 +2,7 @@
 
 The questions in this file are taken from the following link: [Visit DataLemur Questions](https://datalemur.com/questions)
 
-## 1. Histogram of Tweets [Twitter SQL Interview Question] [![Twitter Icon](https://example.com/twitter-icon.png)](https://twitter.com/your_twitter_handle)
+## 1. Histogram of Tweets [Twitter SQL Interview Question] [![Twitter Icon](http://i.imgur.com/tXSoThF.png)]()
 
 Assuming you have a table named `tweets` with the following columns:
 
