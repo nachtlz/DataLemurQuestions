@@ -2,7 +2,7 @@
 
 The questions in this file are taken from the following link: [Visit DataLemur Questions](https://datalemur.com/questions)
 
-## 1. Histogram of Tweets [Twitter SQL Interview Question] [![Twitter Icon](http://i.imgur.com/tXSoThF.png)]()
+## 1. Histogram of Tweets [Twitter SQL Interview Question] [![Twitter Icon](http://i.imgur.com/wWzX9uB.png)]()
 
 Assuming you have a table named `tweets` with the following columns:
 
@@ -52,7 +52,7 @@ GROUP BY
     user_tweet_counts.tweet_bucket;
 ```
 
-## 2. Data Science Skills [LinkedIn SQL Interview Question] [![LinkedIn Icon](https://example.com/linkedin-icon.png)](https://www.linkedin.com/in/your_linkedin_profile)
+## 2. Data Science Skills [LinkedIn SQL Interview Question] [![LinkedIn Icon](http://i.imgur.com/q63QSE5.png)]()
 
 Given a table of candidates and their skills, the task is to identify candidates best suited for an open Data Science job. The goal is to find candidates proficient in Python, Tableau, and PostgreSQL.
 
