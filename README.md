@@ -581,12 +581,13 @@ LIMIT
 
 # 14. Contains Duplicate [Apple Python Interview Question] <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/apple.svg" width="20" height="20">
 
-
 Given a list of integers called `input`, return True if any value appears at least twice in the array. Return False if every element in the input list is distinct.
 
 For example, if the input list was `[1, 3, 5, 7, 1]`, then return True because the number 1 shows up twice.
 
 However, if the input was `[1, 3, 5, 7]`, then return False, because every element of the list is distinct.
+
+### Function:
 
 ```python
 def contains_duplicate(input)-> bool:
@@ -597,4 +598,36 @@ def contains_duplicate(input)-> bool:
     else:
       l.add(i)
   return False
+```
+
+# 15. Salary Inequity [Microsoft Python Interview Question] <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/microsoft.svg" width="20" height="20">
+
+Given a list of salaries, we'll define a metric called inequity, which is the difference between the maximum and minimum salary seen in the list:
+
+`inequity = max(input_list) - min(input_list)`
+
+Write a function called `min_inequity` that takes in a list of salaries and a value $\( n \)$, and returns the minimum inequity possible when taking $\( n \)$ salaries from the full salary list.
+
+If that was hard to understand, you're not alone – let's break it down with some examples.
+
+### Example 1:
+`salaries = [60000, 80000, 120000, 70000]`
+
+`n = 2`
+
+The minimum inequity is $10,000, because max(60000, 70000) - min(60000, 70000) = 10000.
+
+### Example 2:
+`salaries = [60000, 80000, 120000, 70000]`
+
+`n = 3`
+
+The minimum inequity is $20,000, because max(60000, 70000, 80000) - min(60000, 70000, 80000) = 20000.
+
+### Function:
+
+```python
+def min_inequity(salaries, n):
+	salaries.sort()
+	return salaries[n-1] - salaries[0]
 ```
