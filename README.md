@@ -631,3 +631,39 @@ def min_inequity(salaries, n):
 	salaries.sort()
 	return salaries[n-1] - salaries[0]
 ```
+
+# 16. Salary Inequity [Microsoft Python Interview Question] <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google.svg" width="20" height="20">
+
+You are given a list of stock prices, where the stock's price on the \(i^{th}\) day is stored as the \(i^{th}\) element of the prices list.
+
+You want to maximize your profit trading the stock, but are only allowed to buy the stock once and sell it once on a future day.
+
+Write a function called `max_profit` which takes in this list of stock prices, and computes the max profit possible. Return 0 if you can't make any profit.
+
+### Example 1:
+Input: prices = [9, 1, 3, 6, 4, 8, 3, 5, 5]
+
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 6 (price = 8), profit = 8 - 1 = 7.
+
+Note that buying on day 2 and selling on day 1 is not allowed because you have to buy the stock BEFORE you can sell it (unless you're a time-traveller, in which case just trade bitcoin).
+
+### Example 2:
+Input: prices = [6, 4, 3, 3, 2]
+
+Output: 0
+Explanation: In this case, no trades should be made since the stock is tanking like a brick. The max profit here is 0.
+
+### Function:
+
+```python
+def max_profit(prices):
+    buy = prices[0]
+    profit = 0
+    for i in prices:
+        if i - buy > profit:
+            profit = i - buy
+        if i < buy:
+            buy = i
+    return profit
+```
