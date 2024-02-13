@@ -1057,7 +1057,7 @@ ORDER BY
     manufacturer;
 ```
 
-# 25. Pharmacy Analytics (Part 3) [CVS Health SQL Interview Question]
+# 25. User's Third Transaction [Uber SQL Interview Question]
 
 Assume you are given the table below on Uber transactions made by users. Write a query to obtain the third transaction of every user. Output the user id, spend and transaction date.
 
